@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.euphonium.cn/"/>
-  <updated>2020-02-10T14:41:39.347Z</updated>
+  <updated>2020-02-11T14:08:44.982Z</updated>
   <id>http://www.euphonium.cn/</id>
   
   <author>
@@ -15,6 +15,58 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux-shell脚本学习</title>
+    <link href="http://www.euphonium.cn/2020/02/11/Linux-shell%E8%84%9A%E6%9C%AC%E5%AD%A6%E4%B9%A0/"/>
+    <id>http://www.euphonium.cn/2020/02/11/Linux-shell%E8%84%9A%E6%9C%AC%E5%AD%A6%E4%B9%A0/</id>
+    <published>2020-02-11T14:05:57.000Z</published>
+    <updated>2020-02-11T14:08:44.982Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h1><p>此博文转载自我的github仓库<a href="https://github.com/euphonium1998/Shell" target="_blank" rel="noopener">https://github.com/euphonium1998/Shell</a>。为2020-02-01撰写。后续部分为原博文内容</p><hr><h1 id="Linux-shell-bash-shell"><a href="#Linux-shell-bash-shell" class="headerlink" title="Linux shell (bash shell)"></a>Linux shell (bash shell)</h1><hr><h2 id="学习过程"><a href="#学习过程" class="headerlink" title="学习过程"></a>学习过程</h2><p>本人学习Linux主要通过《鸟哥的Linux私房菜》进行学习，shell同理。两天阅读shell的四个章节，前三章通读，最后一章shell脚本细读。</p><p>然后今天晚上完成shell章节课后练习题共6道。比较简单而且网络上例子也很多，故较快完成。</p><hr><h2 id="运行环境"><a href="#运行环境" class="headerlink" title="运行环境"></a>运行环境</h2><p>本人使用虚拟机Ubuntu以及在Windows系统下用git内嵌shell进行编写调试</p><hr><h2 id="程序实例"><a href="#程序实例" class="headerlink" title="程序实例"></a>程序实例</h2><ol><li><p>user_pwd.sh</p><ul><li><p>脚本功能：</p><p>输出目前用户名称以及目前的工作目录。</p></li><li><p>输入指令：</p><p>sh ./user_pwd.sh</p></li></ul></li><li><p>birthday.sh</p><ul><li><p>脚本功能：</p><p>以”yyyy-mm-dd”格式输入自己的下一个生日，输出目前日期离你过生日还差少天。</p></li><li><p>输入指令：</p><p>sh ./birthday.sh [date]</p><p>eg：sh ./birthday.sh 2020-04-16</p></li></ul></li><li><p>sum.sh</p><ul><li><p>脚本功能：</p><p>输入一个整数n，输出1加到n的和</p></li><li><p>输入指令：</p><p>sh ./sum.sh [n]</p><p>eg: sh ./sum.sh 10</p></li></ul></li><li><p>file.sh</p><ul><li><p>脚本功能：</p><p>判断当前目录是否有名称为”logical”文件。如果没有则用touch建立该文件。<br>如果存在该文件且不为目录，则删除该文件并创建名称为”logical”的目录。<br>如果存在该文件且为目前，则删除该目录。<br>（正好执行三遍从创建到销毁）</p></li><li><p>输入指令：</p><p>sh ./file.sh</p></li></ul></li><li><p>passwd.sh</p><ul><li><p>脚本功能：</p><p>提取/etc/passwd的用户名并打印</p></li><li><p>输入指令：</p><p>sh ./passwd.sh</p></li></ul></li><li><p>guess.sh</p><ul><li><p>脚本功能：</p><p>系统生成0~99的随机数，而用户进行输入来猜猜数字</p></li><li><p>输入指令：</p><p>sh ./guess.sh</p></li></ul></li></ol><hr><h2 id="主要遇到问题"><a href="#主要遇到问题" class="headerlink" title="主要遇到问题"></a>主要遇到问题</h2><p>额。其实没遇到啥问题。主要就是if循环</p><p>if [ condition ]; then</p><p>必须要有空格隔开，语法还不太熟。再者就是grep、cut的用法还不太熟练</p><hr><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>总的来说基本学会了shell的语法，但做到以后在公司熟练编写shell脚本还是有一定距离，<br>因为目前linux指令还不是很熟。</p><p>shell脚本就是像python脚本一样，常常用于批处理。但因为效率问题肯定是不能写服务器后端。<br>对于开发工程师而言是一门很好的辅助语言跟python一样。</p><p>同时发现其实最近在公司实习的时候是有接触过shell的。比如/etc/init.d/fantom restart就是<br>通过shell实现的。<br>所以其实很多程序在后台的重启、关闭、调试是通过shell脚本的。其实shell脚本就是一批命令的集合罢了。</p><p>接下来计划学习mysql和设计模式了。疫情导致书还没发货但没办法只能看电子书了。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;补充&quot;&gt;&lt;a href=&quot;#补充&quot; class=&quot;headerlink&quot; title=&quot;补充&quot;&gt;&lt;/a&gt;补充&lt;/h1&gt;&lt;p&gt;此博文转载自我的github仓库&lt;a href=&quot;https://github.com/euphonium1998/Shell&quot; targe
+      
+    
+    </summary>
+    
+    
+    
+      <category term="Linux" scheme="http://www.euphonium.cn/tags/Linux/"/>
+    
+      <category term="shell" scheme="http://www.euphonium.cn/tags/shell/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java多线程 生产者消费者模型</title>
+    <link href="http://www.euphonium.cn/2020/02/11/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B-%E7%94%9F%E4%BA%A7%E8%80%85%E6%B6%88%E8%B4%B9%E8%80%85%E6%A8%A1%E5%9E%8B/"/>
+    <id>http://www.euphonium.cn/2020/02/11/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B-%E7%94%9F%E4%BA%A7%E8%80%85%E6%B6%88%E8%B4%B9%E8%80%85%E6%A8%A1%E5%9E%8B/</id>
+    <published>2020-02-11T14:00:39.000Z</published>
+    <updated>2020-02-11T14:06:54.684Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h1><p>此博文转载自我的github仓库<a href="https://github.com/euphonium1998/Java-Thread" target="_blank" rel="noopener">https://github.com/euphonium1998/Java-Thread</a>。为2020-01-30撰写。后续部分为原博文内容</p><hr><h1 id="Java-多线程"><a href="#Java-多线程" class="headerlink" title="Java 多线程"></a>Java 多线程</h1><hr><h2 id="代码问题背景"><a href="#代码问题背景" class="headerlink" title="代码问题背景"></a>代码问题背景</h2><ul><li>模拟病人去医生看病的过程，n个病人去看病，有m个医生。医院有k个座位，病人在座位上排队，如果座位满了则这个病人出去逛一下过一段时间再回来。</li><li>将这个问题抽象成生产者-消费者模型。医生是消费者，病人是生产者。座位是仓库。</li></ul><hr><h2 id="编译器"><a href="#编译器" class="headerlink" title="编译器"></a>编译器</h2><p>作者本机编译器：JDK13</p><p>不过应该JDK1.5之后的都可以用，看用到的核心代码的源码的部分全部都是“since 1.5”</p><hr><h2 id="输入参数"><a href="#输入参数" class="headerlink" title="输入参数"></a>输入参数</h2><p>在\out\production\Thread目录下有编译好的.class文件</p><p>输入以下指令：</p><p>java Main [doctorNum] [patientNum] [seatNum]</p><p>例如：</p><p>java Main 2 10 3</p><p>表示有2个医生，10个病人，3个座位</p><hr><h2 id="用到核心技术"><a href="#用到核心技术" class="headerlink" title="用到核心技术"></a>用到核心技术</h2><ul><li>atomic类用作计数器</li><li>BlockingQueue用来保证仓库的存和取线程安全</li><li>ReentrantLock用来保证存储打印顺序的正确性</li></ul><hr><h2 id="学习过程"><a href="#学习过程" class="headerlink" title="学习过程"></a>学习过程</h2><p>首先感谢<a href="https://www.liaoxuefeng.com/wiki/1252599548343744/1255943750561472" target="_blank" rel="noopener">廖雪峰Java教程</a>，<br>这个网站可以用于简单的将JavaSE过一遍，基本的功能都有介绍。但要真正做到精通还是需要阅读经典书籍。<br>等过一阵子基本开发必备知识都学完后再读《Java核心技术》</p><p>下面部分作为学习笔记记录这次学习收获：</p><ol><li>明白一些Java多线程的基本概念，比如线程之间的状态和转换，线程的启动方式有两种继承父类Thread或者重写Runnable，<br>守护进程的定义，进程的优先级等等。</li><li>synchronized的同步方法，以及和它互相协作的函数wait，notify。</li><li>从JDK1.5开始引进了ReentrantLock和Condition。Condition的await、signal函数和ReentrantLock配合使用<br>可以替代synchronized、wait，notify。ReentrantLock是个更加轻量级的锁，同时可以通过tryLock这种机制避免死锁，更加灵活。</li><li>明白理解和乐观锁和悲观锁。乐观锁是假设读取过程内容没有被改变，只在结束时进行校验，如果改变了就要上锁重新读取一遍。<br>而悲观锁则是在读取刚开始就上锁防止别的线程不管是读还是写都禁止访问。显然乐观锁适合用于读多写少的情况，<br>悲观锁适合用于读少写多的情况。ReentrantLock是悲观锁，StampedLock则可以实现乐观锁。同时CAS机制也可以算作一种乐观锁。</li><li>学会并使用了BlockingQueue。通过阅读它的源码发现它是用ReentrantLock和Condition实现的。Java还有实现了其他的线程安全集合，<br>比如ConcurrentHashMap等等。</li><li>了解使用Atomic类，通过CAS的方法实现线程安全，适合用作累加器、计数器</li><li>初步了解了用Executors创建线程池的方法，在本次代码初步阶段也是使用线程池来实现医生线程。不过后面由于线程编号的问题无法实现，<br>所以放弃使用线程池。不过在阅读网上资料过程中发现用Executors初始化线程存在很大弊端，工业上常用ThreadPoolExecutor创建线程池。</li></ol><hr><h2 id="遇到问题即解决"><a href="#遇到问题即解决" class="headerlink" title="遇到问题即解决"></a>遇到问题即解决</h2><ul><li>ClassCastExcception：</li></ul><p>这个问题主要是在初期BlockingQueue从主线程传参给医生和病人线程的时候出现问题。原来想用接口编程的，像List和ArrayList一样。<br>但是chuangdi传递给其他类的时候报错了。所以最后就统一用ArrayBlockingQueue这个类来实现阻塞队列了。</p><ul><li>打印顺序无序</li></ul><p>每个线程操作阻塞队列的时候都保证了有序性。但打印信息的时候却是无序的。所以我用ReentrantLock将操作阻塞队列外面又加了一层锁。<br>医生和病人线程同时只有一个可以操作阻塞队列（忽然发现那这样用阻塞队列的意义是什么。。用普通不就行了吗？）。同时要防止两种死锁出现：<br>在某个医生线程获得锁后调用quue.take()引起线程挂起但没有释放外层的锁，以及某个病人获得外层锁后queue.put()引起线程挂起的死锁情况。<br>这两种情况要先做条件判断后再执行后面语句。</p><ul><li>主要以上两个问题（其实主要就是问题2，以及更改过程中延伸出的其他小问题）</li></ul><hr><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>算是一次最初级的Java多线程练手。主要是改写上学期的用C语言实现的操作系统实验，总的感觉和C相比，Java的很多多线程操作都封装好了，不用自己mutex，pthread_create<br>自己实现阻塞队列之类的。但是因为封装好了所以加锁的地方就可能不是个人想要的地方，就会出现实际操作正确但打印无序的新问题。</p><p>同时这次编码还有一些东西没有用到，比如线程池的使用，ThreadLocal的使用。离熟悉Java多线程还有一段路要走。</p><p>一个晚上学习，一个晚上编码，一个下午写README.md。感觉效率还行，多线程先告一段落，接下来学习shell脚本。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;补充&quot;&gt;&lt;a href=&quot;#补充&quot; class=&quot;headerlink&quot; title=&quot;补充&quot;&gt;&lt;/a&gt;补充&lt;/h1&gt;&lt;p&gt;此博文转载自我的github仓库&lt;a href=&quot;https://github.com/euphonium1998/Java-Thread&quot;
+      
+    
+    </summary>
+    
+    
+    
+      <category term="Java" scheme="http://www.euphonium.cn/tags/Java/"/>
+    
+      <category term="多线程" scheme="http://www.euphonium.cn/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo博客搭建与部署</title>
