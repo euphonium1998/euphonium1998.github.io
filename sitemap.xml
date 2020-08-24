@@ -3,12 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://euphonium1998.github.io/post/hugo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</loc>
-    <lastmod>2020-08-24T11:30:31+08:00</lastmod>
+    <loc>https://euphonium1998.github.io/about/</loc>
+    <lastmod>2020-08-24T16:11:24+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://euphonium1998.github.io/</loc>
+    <lastmod>2020-08-24T16:11:24+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://euphonium1998.github.io/hugo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</loc>
     <lastmod>2020-08-24T11:30:31+08:00</lastmod>
   </url>
   
@@ -25,10 +30,6 @@
   <url>
     <loc>https://euphonium1998.github.io/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</loc>
     <lastmod>2020-08-24T11:30:31+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://euphonium1998.github.io/categories/</loc>
   </url>
   
 </urlset>
