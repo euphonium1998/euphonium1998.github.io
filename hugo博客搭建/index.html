@@ -301,17 +301,25 @@
 <ul>
 <li><a href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a>找到windows的64版本下载。并把解压后的目录加载到环境变量path中</li>
 <li>hugo new site myblog 创建博客site</li>
-<li>到<a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a>中下载主题，然后根据主题的说明文档进行配置</li>
+<li>到<a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a>中下载主题，然后根据主题的说明文档进行配置（我根据主题相关文档将config.yaml替换了config.toml）</li>
 <li>接下来的步骤是每次修改日志都需要的，都是在博客根目录执行</li>
 </ul>
 <pre><code>hugo new post/xxx.md //创建日志文件，记得加入tags: [&quot;xx&quot;, &quot;yy&quot;]
 hugo server -t cupper-hugo-theme --buildDrafts //根据主题打开测试服务器，cupper-hugo-theme这个是主题名
-hugo --theme=cupper-hugo-theme --baseUrl=&quot;https://euphonium1998.github.io/&quot; --buildDrafts //根据GitHub pages生成对应静态网站文件
+hugo --theme=cupper-hugo-theme --baseUrl=&quot;https://euphonium1998.github.io/&quot; --buildDrafts //根据GitHub pages生成对应静态文件
 git一系列操作把文件传到对应仓库即可
 </code></pre>
 <p>搭建过程可能出现根目录要commit提交，那按照提示要求做就行</p>
 <h2 id="部署linux远程nginx服务器">部署linux远程nginx服务器</h2>
-<p>待更新</p>
+<p>主要步骤跟上面基本一致但要改些东西</p>
+<p>要将config.yaml中的baseURL改成baseURL: <a href="http://www.euphonium.cn/">http://www.euphonium.cn/</a> (我的主机)</p>
+<p>nginx相关配置文件在/etc/nginx，其中blog的配置在/etc/nginx/conf.d/blog.conf</p>
+<pre><code>hugo --theme=cupper-hugo-theme --buildDrafts //生成静态文件
+进入阿里云linux机
+ps aux | grep ngnix
+kill -9 &lt;两个nginx pid&gt;
+nginx //reboot
+</code></pre>
 
   </main>
   <div id="disqus-container">

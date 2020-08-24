@@ -18,8 +18,11 @@
       
       <guid>https://euphonium1998.github.io/hugo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</guid>
       <description>前言 hugo博客是基于golang开发的，生成静态文件速度极快，而且最关键的是下载过程不容易出现包引入异常的问题。所以作者我把hexo博客框架换成了目前的hugo博客框架。本人搭建过程主要参考以下两个攻略：
- CodeSheep B站up主hugo博客搭建视频 Windows下搭建Hugo博客  搭建过程记录  https://github.com/gohugoio/hugo/releases找到windows的64版本下载。并把解压后的目录加载到环境变量path中 hugo new site myblog 创建博客site 到https://themes.gohugo.io/中下载主题，然后根据主题的说明文档进行配置 接下来的步骤是每次修改日志都需要的，都是在博客根目录执行  hugo new post/xxx.md //创建日志文件，记得加入tags: [&amp;quot;xx&amp;quot;, &amp;quot;yy&amp;quot;] hugo server -t cupper-hugo-theme --buildDrafts //根据主题打开测试服务器，cupper-hugo-theme这个是主题名 hugo --theme=cupper-hugo-theme --baseUrl=&amp;quot;https://euphonium1998.github.io/&amp;quot; --buildDrafts //根据GitHub pages生成对应静态网站文件 git一系列操作把文件传到对应仓库即可  搭建过程可能出现根目录要commit提交，那按照提示要求做就行
-部署linux远程nginx服务器 待更新</description>
+ CodeSheep B站up主hugo博客搭建视频 Windows下搭建Hugo博客  搭建过程记录  https://github.com/gohugoio/hugo/releases找到windows的64版本下载。并把解压后的目录加载到环境变量path中 hugo new site myblog 创建博客site 到https://themes.gohugo.io/中下载主题，然后根据主题的说明文档进行配置（我根据主题相关文档将config.yaml替换了config.toml） 接下来的步骤是每次修改日志都需要的，都是在博客根目录执行  hugo new post/xxx.md //创建日志文件，记得加入tags: [&amp;quot;xx&amp;quot;, &amp;quot;yy&amp;quot;] hugo server -t cupper-hugo-theme --buildDrafts //根据主题打开测试服务器，cupper-hugo-theme这个是主题名 hugo --theme=cupper-hugo-theme --baseUrl=&amp;quot;https://euphonium1998.github.io/&amp;quot; --buildDrafts //根据GitHub pages生成对应静态文件 git一系列操作把文件传到对应仓库即可  搭建过程可能出现根目录要commit提交，那按照提示要求做就行
+部署linux远程nginx服务器 主要步骤跟上面基本一致但要改些东西
+要将config.yaml中的baseURL改成baseURL: http://www.euphonium.cn/ (我的主机)
+nginx相关配置文件在/etc/nginx，其中blog的配置在/etc/nginx/conf.d/blog.conf
+hugo --theme=cupper-hugo-theme --buildDrafts //生成静态文件 进入阿里云linux机 ps aux | grep ngnix kill -9 &amp;lt;两个nginx pid&amp;gt; nginx //reboot  </description>
     </item>
     
   </channel>
