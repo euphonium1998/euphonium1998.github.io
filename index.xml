@@ -12,6 +12,19 @@
     
     
     <item>
+      <title>Golang Http体验之一</title>
+      <link>https://euphonium1998.github.io/golang-http%E4%BD%93%E9%AA%8C%E4%B9%8B%E4%B8%80/</link>
+      <pubDate>Fri, 04 Sep 2020 19:07:06 +0800</pubDate>
+      
+      <guid>https://euphonium1998.github.io/golang-http%E4%BD%93%E9%AA%8C%E4%B9%8B%E4%B8%80/</guid>
+      <description>前言 最近正好实习期间有用到golang的http服务，就自己也用了些课余时间学习并且简单敲了（copy）了一些demo代码，详细可以见https://github.com/euphonium1998/ginDemo我的golang http仓库
+参考的学习资料主要是：
+ https://github.com/gin-gonic/gin https://github.com/ffhelicopter/Go42  Golang net/http基础库 其实我觉得golang的http库真的涉及的蛮好的。跟C++这种相比肯定代码更加简洁然后让代码重点都聚焦在http协议本身而不是其他连接之类的；跟Java相比（相对SpringBoot而言，Netty还没用过）Java代码封装的太好了，很多一个注解就解决了，但是你可能都不知道你实际发送的http请求body和header的请求。而golang的基础库代码真的觉得蛮好的，封装的恰到好处。可能代码长度跟Java比会多一些，但我现在更喜欢这种手动填充header，自己写代码序列化的过程。感觉这样更能让我这种新手理解协议。
+server 非常简单，直接看下面代码
+package main import ( &amp;quot;encoding/json&amp;quot; &amp;quot;fmt&amp;quot; &amp;quot;io/ioutil&amp;quot; &amp;quot;net/http&amp;quot; ) type Rectangle struct { X int `json:&amp;quot;x&amp;quot;` Y int `json:&amp;quot;y&amp;quot;` Square int `json:&amp;quot;square&amp;quot;` } func main() { http.HandleFunc(&amp;quot;/test&amp;quot;, myFunc) err := http.ListenAndServe(&amp;quot;:8080&amp;quot;, nil) if err != nil { fmt.Printf(&amp;quot;begin http server error[%v]\n&amp;quot;, err) } } func myFunc(w http.ResponseWriter, r *http.Request) { var rectangle Rectangle //将结果按照json编码写入http response body defer func() { wData, _ := json.</description>
+    </item>
+    
+    <item>
       <title>2020 年度计划</title>
       <link>https://euphonium1998.github.io/2020-%E5%B9%B4%E5%BA%A6%E8%AE%A1%E5%88%92/</link>
       <pubDate>Wed, 02 Sep 2020 20:37:43 +0800</pubDate>

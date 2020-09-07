@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <meta name="generator" content="Hugo 0.74.3" />
-  <link rel="canonical" href="https://euphonium1998.github.io/tags/">
+  <link rel="canonical" href="https://euphonium1998.github.io/golang-http%E4%BD%93%E9%AA%8C%E4%B9%8B%E4%B8%80/">
 
   
 
@@ -34,7 +34,7 @@
 
   
   
-  <title>Tags | Euphonium1998&#39;s  Blog</title>
+  <title>Golang Http体验之一 | Euphonium1998&#39;s  Blog</title>
 </head>
 
   <body>
@@ -172,7 +172,7 @@
       
       
       
-      <a href="/post/" >
+      <a href="/post/" aria-current="page">
         <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
           <use xlink:href="#bookmark"></use>
         </svg>
@@ -185,7 +185,7 @@
       
       
       
-      <a href="/tags/" aria-current="page">
+      <a href="/tags/" >
         <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
           <use xlink:href="#bookmark"></use>
         </svg>
@@ -215,77 +215,253 @@
         <div>
           
   <main id="main">
-    <h1>Tags</h1>
-    <ul class="patterns-list">
+    <h1>
+      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+        <use xlink:href="#bookmark"></use>
+      </svg>
+      Golang Http体验之一
+    </h1>
+
+    <div class="date">
       
-        <li>
-          <h2>
-            <a href="/tags/gin/">
+      
+      <strong>Publish date: </strong>Sep 4, 2020
+      
+        
+      
+    </div>
+
+    
+      <div class="tags">
+        <strong>Tags: </strong>
+        <ul aria-label="tags">
+          
+            <li>
               <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
                 <use xlink:href="#tag"></use>
               </svg>
-              (1) gin
-            </a>
-          </h2>
-        </li>
-      
-        <li>
-          <h2>
-            <a href="/tags/golang/">
+              
+              <a href="https://euphonium1998.github.io/tags/golang/">Golang</a>
+            </li>
+          
+            <li>
               <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
                 <use xlink:href="#tag"></use>
               </svg>
-              (1) Golang
-            </a>
-          </h2>
-        </li>
-      
-        <li>
-          <h2>
-            <a href="/tags/http/">
+              
+              <a href="https://euphonium1998.github.io/tags/http/">http</a>
+            </li>
+          
+            <li>
               <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
                 <use xlink:href="#tag"></use>
               </svg>
-              (1) http
-            </a>
-          </h2>
+              
+              <a href="https://euphonium1998.github.io/tags/gin/">gin</a>
+            </li>
+          
+        </ul>
+      </div>
+    
+    
+    
+      
+
+  <nav class="toc" aria-labelledby="toc-heading">
+    <h2 id="toc-heading">Table of contents</h2>
+    <ol>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#%e5%89%8d%e8%a8%80">
+            前言
+          </a>
         </li>
       
         <li>
-          <h2>
-            <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
-              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
-                <use xlink:href="#tag"></use>
-              </svg>
-              (1) 博客搭建
-            </a>
-          </h2>
+          
+          
+          
+          
+          <a href="#golang-nethttp%e5%9f%ba%e7%a1%80%e5%ba%93">
+            Golang net/http基础库
+          </a>
         </li>
       
         <li>
-          <h2>
-            <a href="/tags/%E5%B9%B4%E5%BA%A6%E8%AE%A1%E5%88%92/">
-              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
-                <use xlink:href="#tag"></use>
-              </svg>
-              (1) 年度计划
-            </a>
-          </h2>
+          
+          
+          
+          
+          <a href="#gin%e6%a1%86%e6%9e%b6">
+            gin框架
+          </a>
         </li>
       
-        <li>
-          <h2>
-            <a href="/tags/%E6%9C%88%E5%BA%A6%E8%AE%A1%E5%88%92/">
-              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
-                <use xlink:href="#tag"></use>
-              </svg>
-              (1) 月度计划
-            </a>
-          </h2>
-        </li>
-      
-    </ul>
+    </ol>
+  </nav>
+
+
+    
+
+    <h2 id="前言">前言</h2>
+<p>最近正好实习期间有用到golang的http服务，就自己也用了些课余时间学习并且简单敲了（copy）了一些demo代码，详细可以见<a href="https://github.com/euphonium1998/ginDemo">https://github.com/euphonium1998/ginDemo</a>我的golang http仓库</p>
+<p>参考的学习资料主要是：</p>
+<ul>
+<li><a href="https://github.com/gin-gonic/gin">https://github.com/gin-gonic/gin</a></li>
+<li><a href="https://github.com/ffhelicopter/Go42">https://github.com/ffhelicopter/Go42</a></li>
+</ul>
+<h2 id="golang-nethttp基础库">Golang net/http基础库</h2>
+<p>其实我觉得golang的http库真的涉及的蛮好的。跟C++这种相比肯定代码更加简洁然后让代码重点都聚焦在http协议本身而不是其他连接之类的；跟Java相比（相对SpringBoot而言，Netty还没用过）Java代码封装的太好了，很多一个注解就解决了，但是你可能都不知道你实际发送的http请求body和header的请求。而golang的基础库代码真的觉得蛮好的，封装的恰到好处。可能代码长度跟Java比会多一些，但我现在更喜欢这种手动填充header，自己写代码序列化的过程。感觉这样更能让我这种新手理解协议。</p>
+<h3 id="server">server</h3>
+<p>非常简单，直接看下面代码</p>
+<pre><code>package main
+
+import (
+	&quot;encoding/json&quot;
+	&quot;fmt&quot;
+	&quot;io/ioutil&quot;
+	&quot;net/http&quot;
+)
+
+type Rectangle struct {
+	X      int `json:&quot;x&quot;`
+	Y      int `json:&quot;y&quot;`
+	Square int `json:&quot;square&quot;`
+}
+
+func main()  {
+	http.HandleFunc(&quot;/test&quot;, myFunc)
+	err := http.ListenAndServe(&quot;:8080&quot;, nil)
+	if err != nil {
+		fmt.Printf(&quot;begin http server error[%v]\n&quot;, err)
+	}
+}
+
+func myFunc(w http.ResponseWriter, r *http.Request) {
+	var rectangle Rectangle
+    //将结果按照json编码写入http response body
+	defer func() {      
+		wData, _ := json.Marshal(rectangle)
+		w.Write(wData)
+	}()
+	buf, err := ioutil.ReadAll(r.Body)  //套路代码，将http的body写入一个[]byte
+	if err != nil {
+		fmt.Printf(&quot;err[%v]\n&quot;, err)
+		return
+	}
+	err = json.Unmarshal(buf, &amp;rectangle)
+	if err != nil {
+		fmt.Printf(&quot;json unmarshal err[%v]\n&quot;, err)
+	}
+	rectangle.Square = rectangle.X * rectangle.Y
+	fmt.Println(rectangle)
+}
+</code></pre>
+<p>不过也在实习中遇到一个坑。就是有一个业务需求是读取http请求之后将这个请求转发。这个时候就是需要重新设置http的host。但是如果只改变http的host会出现转发报错：<code>invalid... read closed body</code>这类错误。这个是因为golang的http的body只让读一遍。这个时候需要在转发http.request之前做一个骚操作：</p>
+<pre><code>r.Body = ioutil.NoCloser(bytes.NewBuffer([]byte(buf)))  //buf就是上段代码的buf。将它不做改变再写回去
+</code></pre>
+<h3 id="client">client</h3>
+<p>golang的语言具有很好的自描述性，不需要写啥注释就能看懂</p>
+<pre><code>package main
+
+import (
+	&quot;bytes&quot;
+	&quot;encoding/json&quot;
+	&quot;fmt&quot;
+	&quot;io/ioutil&quot;
+	&quot;math/rand&quot;
+	&quot;net/http&quot;
+	&quot;time&quot;
+)
+
+func main()  {
+	var rectangle Rectangle
+	rand.Seed(time.Now().Unix())
+	rectangle.X = rand.Intn(10)
+	rectangle.Y = rand.Intn(10)
+	fmt.Println(rectangle.X, &quot;\t&quot;, rectangle.Y)
+	body, err := json.Marshal(rectangle)
+
+	resp, err := http.Post(&quot;http://localhost:8080/test&quot;, &quot;application/json&quot;, bytes.NewBuffer(body))
+	//request, err := http.NewRequest(&quot;POST&quot;, &quot;localhost:8080/test&quot;, bytes.NewBuffer(body))
+	if err != nil {
+		fmt.Println(err)
+	}
+	defer resp.Body.Close()
+	fmt.Println(&quot;ans below: &quot;)
+	fmt.Println(resp.Status)
+	fmt.Println(resp.Header)
+	buf, _ := ioutil.ReadAll(resp.Body)
+	fmt.Println(string(buf))
+}
+
+type Rectangle struct {
+	X      int `json:&quot;x&quot;`
+	Y      int `json:&quot;y&quot;`
+	Square int `json:&quot;square&quot;`
+}
+</code></pre>
+<p><code>http.Post http.Get</code>就是发送get或者post请求了。这样很方便，但我觉得以下代码可能更具有通用性</p>
+<pre><code>    // 简式声明一个http.Client空结构体指针对象
+	client := &amp;http.Client{}
+
+	// 使用http.NewRequest构建http Request请求
+	request, err := http.NewRequest(&quot;GET&quot;, &quot;http://www.baidu.com&quot;, nil)
+	if err != nil {
+		fmt.Println(err)
+	}
+
+    request.Body = ioutil.NoCloser(bytes.NewBuffer([]byte(buf))) //buf为body的[]byte
+
+    // 使用http.Client 来发送request，这里使用了Do方法。
+	response, err := client.Do(request)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	// 程序结束时关闭response.Body响应流
+	defer response.Body.Close()
+
+    //response 处理逻辑
+</code></pre>
+<h2 id="gin框架">gin框架</h2>
+<p>这个框架的学习过程其实就是跟着这个GitHub仓库的demo代码敲了一遍。<a href="https://github.com/gin-gonic/gin">https://github.com/gin-gonic/gin</a>相比net/http而言。我觉得有几个地方比较方便：</p>
+<ul>
+<li>绑定json、xml、protobuf等比较方便</li>
+<li>加载静态资源代码比较方便。（但是我试了很久没办法加载远程机子的静态资源）</li>
+</ul>
+<p>因为没有用这个框架搭过实际的项目，所以它的一些特性还没使用。通过阅读readme.md看出它框架代码具有拓展性，比如它可以自己注册logger以及可以自定义参数绑定。我的详细demo代码在我的GitHub仓库里。<a href="https://github.com/euphonium1998/ginDemo">https://github.com/euphonium1998/ginDemo</a></p>
+
   </main>
+  <div id="disqus-container">
+  
+    <button id="disqus-button" onclick="showComments()">Show comments</button>
+    <div id="disqus-comments">
+      
+      
+      
+        <p><em>Disqus comments are disabled.</em></p>
+        <script type="application/javascript">
+          function showComments() {
+            // Remove button
+var disqusButton = document.getElementById('disqus-button');
+disqusButton.parentNode.removeChild(disqusButton); 
+// Un-hide comments
+var disqusComments = document.getElementById('disqus-comments');
+disqusComments.style.display = 'block'; 
+          }
+        </script>
+      
+      <noscript>Enable JavaScript to view Disqus comments.</noscript>
+    </div>
+  
+</div>
+
 
           <footer role="contentinfo">
   <div>
